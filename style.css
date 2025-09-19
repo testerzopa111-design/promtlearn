@@ -136,7 +136,7 @@ tr:hover {
   background: #f9f9f9;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -145,39 +145,5 @@ tr:hover {
   .navbar button {
     width: 100%;
     text-align: center;
-  }
-
-  .info {
-    padding: 20px;
-  }
-
-  table {
-    font-size: 14px;
-  }
-
-  th, td {
-    padding: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .info h1 {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  h3 {
-    font-size: 18px;
-    text-align: center;
-  }
-
-  .logo {
-    font-size: 22px;
-  }
-
-  table {
-    display: block;
-    overflow-x: auto; /* เลื่อนได้ถ้าตารางยาว */
-    white-space: nowrap;
   }
 }
