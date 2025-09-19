@@ -176,3 +176,53 @@ tr:hover {
     padding: 10px;
   }
 }
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .navbar button {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .menu .content {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 6px;
+  }
+
+  .menu .content a {
+    padding: 12px;
+  }
+}
+
+/* ถ้าอยากให้ Navbar เป็น Hamburger Menu */
+@media (max-width: 500px) {
+  .navbar {
+    display: none;
+  }
+
+  .navbar.active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    background: #2c3e50;
+    color: white;
+    border-radius: 6px;
+  }
+}
